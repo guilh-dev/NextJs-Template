@@ -1,0 +1,28 @@
+{
+  "Metadata": {
+    "homeTitle": "Inicio - Next",
+    "aboutTitle": "Sobre nós - Next"
+  },
+  "Menu": {
+    "home": "Casa",
+    "android": "Android",
+    "cloud": "Nuvem",
+    "edit": "Edição",
+    "dashboard": "Painel",
+    "documents": "Documentos",
+    "account": "Minha Conta",
+    "errors": "Erros",
+    "theme": "Mudar Tema",
+    "lang": "Lingua"
+  },
+  "Home": {
+    "title": "Para Começar, Edite o arquivo page.tsx",
+    "paragraph_1": "Procurando por onde começar ou por instruções?",
+    "link_1": "Fazer o Deploy",
+    "link_2": "Documentação"
+  },
+  "AboutPage": {
+    "title": "Nossa História",
+    "description": "Conteúdo em português aqui."
+  }
+}

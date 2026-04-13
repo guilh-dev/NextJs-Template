@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import "@radix-ui/colors/slate.css";
+@import "@radix-ui/colors/slate-dark.css";
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: var(--slate-1);
+  --foreground: var(--slate-12);
+
+  --s-1: var(--slate-1);
+  --s-2: var(--slate-2);
+  --s-3: var(--slate-3);
+  --s-4: var(--slate-4);
+  --s-5: var(--slate-5);
+  --s-6: var(--slate-6);
+  --s-7: var(--slate-7);
+  --s-8: var(--slate-8);
+  --s-9: var(--slate-9);
+  --s-10: var(--slate-10);
+  --s-11: var(--slate-11);
+  --s-12: var(--slate-12);
+}
+
+:where(.dark) {
+  --background: var(--slate-dark-1);
+  --foreground: var(--slate-dark-12);
+
+  --s-1: var(--slate-dark-1);
+  --s-2: var(--slate-dark-2);
+  --s-3: var(--slate-dark-3);
+  --s-4: var(--slate-dark-4);
+  --s-5: var(--slate-dark-5);
+  --s-6: var(--slate-dark-6);
+  --s-7: var(--slate-dark-7);
+  --s-8: var(--slate-dark-8);
+  --s-9: var(--slate-dark-9);
+  --s-10: var(--slate-dark-10);
+  --s-11: var(--slate-dark-11);
+  --s-12: var(--slate-dark-12);
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-slate-1: var(--s-1);
+  --color-slate-2: var(--s-2);
+  --color-slate-3: var(--s-3);
+  --color-slate-4: var(--s-4);
+  --color-slate-5: var(--s-5);
+  --color-slate-6: var(--s-6);
+  --color-slate-7: var(--s-7);
+  --color-slate-8: var(--s-8);
+  --color-slate-9: var(--s-9);
+  --color-slate-10: var(--s-10);
+  --color-slate-11: var(--s-11);
+  --color-slate-12: var(--s-12);
+}
+
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}

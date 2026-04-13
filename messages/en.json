@@ -1,0 +1,28 @@
+{
+  "Metadata": {
+    "homeTitle": "Home Page - Next",
+    "aboutTitle": "About Us - Next"
+  },
+  "Menu": {
+    "home": "Home",
+    "android": "Android",
+    "cloud": "Cloud",
+    "edit": "Edit",
+    "dashboard": "Dashboard",
+    "documents": "Documents",
+    "account": "My account",
+    "errors": "Errors",
+    "theme": "Switch Theme",
+    "lang": "Language"
+  },
+  "Home": {
+    "title": "To get started, edit the page.tsx file.",
+    "paragraph_1": "Looking for a starting point or more instructions?",
+    "link_1": "Deploy Now",
+    "link_2": "Documentation"
+  },
+  "AboutPage": {
+    "title": "Our story",
+    "description": "english content."
+  }
+}
