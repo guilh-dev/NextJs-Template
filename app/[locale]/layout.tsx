@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AppProvider } from '@/providers'
 import "./globals.css";
 
-import {setRequestLocale} from 'next-intl/server';
+import {setRequestLocale, getMessages} from 'next-intl/server';
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
@@ -32,11 +32,12 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
+  const messages = await getMessages();
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <body>
-        <NextIntlClientProvider>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <AppProvider>
             <SidebarMenu/>
             {children}
