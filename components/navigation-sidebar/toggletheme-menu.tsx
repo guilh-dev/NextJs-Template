@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { SunIcon } from "@radix-ui/react-icons"
-import { forwardRef } from 'react';
+import { forwardRef } from 'react'; 
 
 
 const ThemeToggle = forwardRef<HTMLButtonElement, {label: string, expanded?: boolean}>(

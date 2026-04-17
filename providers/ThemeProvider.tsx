@@ -11,7 +11,6 @@ export function ThemeProvider({ children, ...props }: React.ComponentProps<typeo
         defaultTheme: "system",
         enableSystem: true,
         disableTransitionOnChange: true,
-        ...props
     }
     return <NextThemesProvider {...themeprops}>{children}</NextThemesProvider>;
 }
