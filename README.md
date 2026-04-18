@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Starter Template
+A high-performance, accessible, and scalable boilerplate built with the latest React ecosystem. This template is designed to streamline the development of modern web applications with a focus on type safety, internationalisation, and polished user experience.
 
-## Getting Started
+# Key Features
 
-First, run the development server:
+- **Bleeding Edge Stack**: Built with Next.js 16 and React 19, leveraging the latest Server Components and Actions.
+- **Robust Localisation (i18n):** Full support for **English** and **Portuguese** via `next-intl`, including localized routing and middleware.
+- **Advanced Theming:** A sophisticated Dark/Light mode toggle powered by `next-themes`, ensuring zero "flash of unstyled content" (FOUC).
+- **Accessible UI Foundations:** Utilises **Radix UI Primitives** for complex components (Tooltips, Selects, Scroll Areas), ensuring full WAI-ARIA compliance.
+- **Design System Integration:** Implementation of **Radix Colors** for a mathematically balanced and accessible colour palette.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Technical Specification
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Framework:** Next.js 16 (App Router).
+- **Library:** React 19
+- **Internationalisation:** `next-intl`
+- **Styling & UI:** Radix UI Primitives & Radix Colors
+- **Theme Management:** `next-themes`
+- **Icons	Radix:** Icons
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Prerequisites
+Ensure you have Node.js 24.x or later installed.
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/guilh-dev/NextJs-Template.git
+    ```
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+3. Initialise development server:
+    ```bash
+    npm run dev
+    ```
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Architecture Decisions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Why Radix UI?
+Instead of using heavy UI frameworks, this template uses Radix UI Primitives. This allows for total control over the styling (via CSS or Tailwind) while Radix handles the difficult aspects of accessibility, such as keyboard navigation and focus management.
 
-## Deploy on Vercel
+## Internationalisation (i18n)
+The project structure follows the "Localized Path" strategy:
+- `/[locale]/page.tsx`: Automatically handles language-specific routes.
+- `/messages/*.json`: Centralised dictionaries for easy translation scaling.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Colour Theory
+By using Radix Colors, the template provides:
+- Automatic contrast ratio compliance.
+- Seamless transition between Light and Dark modes using semantic colour scales (e.g.,  slate-1 to slate-12).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Licence
+Distributed under the MIT Licence. See [LICENSE](https://github.com/guilh-dev/NextJs-Template/edit/master/LICENSE.txt) for more information.
